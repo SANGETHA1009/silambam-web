@@ -4,42 +4,41 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FINAL YEAR PROJECT</title>
-<link href="../web/style.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <nav>
-    <a href="../web/index.html">
-        <img src="../web/logo.png" alt="logo">
+    <a href="index.html">
+        <img src="logo.png" alt="logo">
     </a>
     <ul>
         <li class="dropdown">
-            <a href="../web/about.html">ABOUT ▾</a>
+            <a href="about.html">ABOUT ▾</a>
             <ul class="dropdown-menu">
-                <li><a href="../web/instructors.html">INSTRUCTORS</a></li>
+                <li><a href="instructors.html">INSTRUCTORS</a></li>
             </ul>
         </li>
-        <li><a href="../web/blog.html">BLOG</a></li>
-        <li><a href="../web/testimonials.html">TESTIMONIAL</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="testimonials.html">TESTIMONIAL</a></li>
         <li class="dropdown">
-            <a href="../web/gallery.html">GALLERY ▾</a>
+            <a href="gallery.html">GALLERY ▾</a>
             <ul class="dropdown-menu">
-                <li><a href="../web/weapon.html">WEAPONS</a></li>
+                <li><a href="weapon.html">WEAPONS</a></li>
             </ul>
         </li>
-        <li><a href="../web/events.html">EVENTS</a></li>
-        <li><a href="../web/registration.html">CLASS & REGISTRATION</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="registration.html">CLASS & REGISTRATION</a></li>
     </ul>
 </nav>
 
-    <header style="background: url('../web/about_hero.jpg') no-repeat center center/cover; box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);">
-        <h1>ABOUT</h1>
-    </header>
-	
-	
-	<!-- Core Values Section -->
+<header style="background: url('about_hero.jpg') no-repeat center center/cover; box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);">
+    <h1>ABOUT</h1>
+</header>
+
+<!-- Core Values Section -->
 <section class="core-values">
   <div class="card">
     <h3>CORE VALUES</h3>
@@ -67,26 +66,17 @@
   </div>
 </section>
 
-
-	
-	
-	
-	
-	
-	
-	
-
-	
 <!-- Tagline Section -->
 <section class="tagline">
   <h2><span id="typed-text"></span><span id="cursor">|</span></h2>
 </section>
-	
+
+<!-- Typing Effect Script -->
 <script>
 const text = "ANCIENT MOVES, TIMELESS POWER";
-const speed = 100; // typing speed in ms
-const delayAfterComplete = 1500; // pause before deleting
-const delayAfterDelete = 500; // pause before retyping
+const speed = 100;
+const delayAfterComplete = 1500;
+const delayAfterDelete = 500;
 
 let i = 0;
 let isDeleting = false;
@@ -118,104 +108,33 @@ document.addEventListener("DOMContentLoaded", function() {
   typeWriter();
 });
 </script>
-	
-	
-	
-	
-	
-	
-	<!-- History Section -->
+
+<!-- History Section -->
 <section class="history">
   <h2>HISTORY</h2>
   <div class="history-content">
     <div class="history-img">
-      <img src="../web/about 1.png" alt="History Image">
+      <img src="about 1.png" alt="History Image">
     </div>
-<div class="history-text">
-  <p>
-    has its roots in the Sangam era (around 2nd century BCE to 2nd century CE).
-    The word Silambam comes from the Tamil words "silam" (hill) and "bambu" (bamboo),
-    referring to the bamboo staff used in combat. Historical records and literature, such as the *Silappatikaram* and *Purananuru*, mention Silambam as a combat technique practiced by Tamil warriors and kings.
-      It was also taught in ancient Tamil martial academies (*kalaris*)
-
-    <span class="extra-text" style="display: none;">
-     Under British colonial rule, Silambam was banned along with other traditional martial arts, causing a decline. However, it was preserved in rural communities and later revived through cultural movements and martial art federations. Today, Silambam is recognized globally for its fluid movements, weapon-based techniques, and its role in promoting Tamil heritage, fitness, and self-discipline.
-    </span>
-  </p>
-  <button class="read-more" onclick="toggleReadMore(this)">READ MORE</button>
-	  </div>
-	</div>
+    <div class="history-text">
+      <p>
+        has its roots in the Sangam era (around 2nd century BCE to 2nd century CE).
+        The word Silambam comes from the Tamil words "silam" (hill) and "bambu" (bamboo),
+        referring to the bamboo staff used in combat. Historical records and literature, such as the *Silappatikaram* and *Purananuru*, mention Silambam as a combat technique practiced by Tamil warriors and kings.
+          It was also taught in ancient Tamil martial academies (*kalaris*)
+        <span class="extra-text" style="display: none;">
+         Under British colonial rule, Silambam was banned along with other traditional martial arts, causing a decline. However, it was preserved in rural communities and later revived through cultural movements and martial art federations. Today, Silambam is recognized globally for its fluid movements, weapon-based techniques, and its role in promoting Tamil heritage, fitness, and self-discipline.
+        </span>
+      </p>
+      <button class="read-more" onclick="toggleReadMore(this)">READ MORE</button>
+    </div>
+  </div>
 </section>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<script>
-  function toggleReadMore(button) {
-    const extraText = button.previousElementSibling.querySelector('.extra-text');
-    if (extraText.style.display === "none") {
-      extraText.style.display = "inline";
-      button.textContent = "READ LESS";
-    } else {
-      extraText.style.display = "none";
-      button.textContent = "READ MORE";
-    }
-  }
-</script>
-	
-	
-	
-	
-	
-	
-	<script>
-    document.body.addEventListener('mousemove', function(e) {
-        const x = e.clientX / window.innerWidth * 100;
-        const y = e.clientY / window.innerHeight * 100;
-        document.body.style.backgroundPosition = `${x}% ${y}%`;
-    });
-</script>
-	
-	
-	
-<footer>
-        <h2>GET IN TOUCH</h2>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>INFORMATION</h3>
-                <ul>
-                    <li><a href="../web/index.html">home</a></li>
-					<li><a href="../web/about.html">about</a></li>
-					<li><a href="../web/blog.html">blog</a></li>
-                    <li><a href="../web/testimonials.html">testimonial</a></li>
-                    <li><a href="../web/gallery.html">gallery</a></li>
-                    <li><a href="../web/events.html">events</a></li>
-                    <li><a href="../web/registration.html">class & registration</a></li>
-                    <li><a href="../web/instructors.html">instructors</a></li>
-                    <li><a href="../web/weapon.html">weapons</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <img src="../web/logo.png" alt="logo" class="footer-logo">
-            </div>
-            <div class="footer-section footer-contact">
-                <h3>CONTACT US</h3>
-                <p>+60 12–338 6797</p>
-                <p>+60 16–276 5977</p>
-                <div class="social-icons">
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" width="25"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="25"></a>
-                </div>
-            </div>
-        </div>
-        <p class="footer-quote">"சிலம்பம் – தமிழரின் பாரம்பரிய போர்க் கலைவும்,<br>உடலுடன் மனத்தையும் வளப்படுத்தும் மரபும்."</p>
-    </footer>
-</body>
-</html>
+
+<!-- Expand History -->
+<script>
+function toggleReadMore(button) {
+  const extraText = button.previousElementSibling.querySelector('.extra-text');
+  if (extraText.style.display === "non
+
 

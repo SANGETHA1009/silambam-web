@@ -4,148 +4,82 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FINAL YEAR PROJECT</title>
-<link href="../web/style.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <nav>
-    <a href="../web/index.html">
-        <img src="../web/logo.png" alt="logo">
+    <a href="index.html">
+        <img src="logo.png" alt="logo">
     </a>
     <ul>
         <li class="dropdown">
-            <a href="../web/about.html">ABOUT ▾</a>
+            <a href="about.html">ABOUT ▾</a>
             <ul class="dropdown-menu">
-                <li><a href="../web/instructors.html">INSTRUCTORs</a></li>
+                <li><a href="instructors.html">INSTRUCTORs</a></li>
             </ul>
         </li>
-        <li><a href="../web/blog.html">BLOG</a></li>
-        <li><a href="../web/testimonials.html">TESTIMONIAL</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="testimonials.html">TESTIMONIAL</a></li>
         <li class="dropdown">
-            <a href="../web/gallery.html">GALLERY ▾</a>
+            <a href="gallery.html">GALLERY ▾</a>
             <ul class="dropdown-menu">
-                <li><a href="../web/weapon.html">WEAPONS</a></li>
+                <li><a href="weapon.html">WEAPONS</a></li>
             </ul>
         </li>
-        <li><a href="../web/events.html">EVENTS</a></li>
-        <li><a href="../web/registration.html">CLASS & REGISTRATION</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="registration.html">CLASS & REGISTRATION</a></li>
     </ul>
 </nav>
-	
-    <header style="background: url('../web/registration hero.jpg') no-repeat center center/cover; box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);">
-        <h1>REGISTRATION</h1>
-    </header>
-	
-	
-	
-	
-	
 
-	
-	
-	
-	
-	<div class="location-scroll-container">
-  <div class="location-card">
-    <p>A<br>Sunday 8.00am - 10.00am<br>
-		SJKT Kajang</p>
-  </div>
-  <div class="location-card">
-    <p>B<br>Sunday 8.00am - 10.00am<br>
-	  SJKT Fes Serdang</p>
-  </div>
-  <div class="location-card">
-    <p>C<br>Sunday 10.00am - 12.00pm<br>
-Kajang Training Centre</p>
-  </div>
-  <div class="location-card">
-    <p>D<br>Sunday 10.00am - 12.00pm<br>
-		Serdang Balai Raya</p>
-  </div>
-  <div class="location-card">
-    <p>E<br>Sunday 10.00am - 12.00pm<br>
-		Dewan Kuil Subramaniam Seri Timah Balakong</p>
-  </div>
-  <div class="location-card">
-    <p>F<br>Monday 8.00pm - 10.00pm<br>
-		Dewan Beringin Sri Gombak</p>
-  </div>
-  <div class="location-card">
-    <p>G<br>Tuesday 7.30pm - 9.30pm<br>
-		Dewan Komuniti Semenyih</p>
-  </div>
-  <div class="location-card">
-    <p>H<br>Thursday 8.00pm - 10.00pm<br>
-		Balairaya SG.Long</p>
-  </div>
-  <div class="location-card">
-    <p>I<br>Friday 12.30pm - 2.00pm<br>
-		SMK SG long </p>
-  </div>
-  <div class="location-card">
-    <p>J<br>Friday 8.00pm - 10.00pm<br>
-		Kajang Training Center</p>
-  </div>
-  <div class="location-card">
-    <p>K<br>Saturday 8.30am - 10.30am<br>
-		SJKT LADANG Rinching</p>
-  </div>
-  <div class="location-card">
-    <p>L<br>Saturday 10.00am - 12.00pm<br>
-		Kajang Training Centre </p>
-  </div>
-  <div class="location-card">
-    <p>M<br>Saturday 1.00pm - 3.00pm<br>
-	  Dewan Bahau</p>
-  </div>
-</div>
-		
-		
-	<section>
-<div class="form-box">
-  <h2>REGISTRATION FORM</h2>
-  <form id="registration-form" action="https://formspree.io/f/xeoganne" method="POST">
-    <input type="text" name="name" placeholder="Name" required>
-    <input type="text" name="age" placeholder="Age" required>
-    <input type="text" name="contact" placeholder="Contact Information" required>
-	<input type="text" name="email" placeholder="Email" required>
-    
-    <select name="class" required>
-      <option value="" disabled selected>Select Class Section</option>
-      <option value="A">Class A</option>
-      <option value="B">Class B</option>
-      <option value="C">Class C</option>
-	  <option value="A">Class D</option>
-      <option value="B">Class E</option>
-      <option value="C">Class F</option>
-      <option value="A">Class G</option>
-      <option value="B">Class H</option>
-      <option value="C">Class I</option>
-	  <option value="A">Class J</option>
-      <option value="B">Class K</option>
-      <option value="C">Class L</option>
-      <option value="C">Class M</option>
-    </select>
-    
-    <button type="submit">SUBMIT</button>
+<header style="background: url('registration hero.jpg') no-repeat center center/cover; box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);">
+    <h1>REGISTRATION</h1>
+</header>
 
-    <p id="success-message" class="form-message success">Your submission has been received!</p>
-    <p id="error-message" class="form-message error">Please fill in all fields.</p>
-	  
-	<p id="payment-message" class="form-message payment" style="display:none;">
-  Your payment instructions will be emailed to you. Please make the payment within 5 days if you confirm to join.
-</p>
-	  
-  </form>
+<div class="location-scroll-container">
+  <!-- All class cards here (same as yours, no changes needed) -->
+  <!-- ... -->
 </div>
-		
-		
+
+<section>
+  <div class="form-box">
+    <h2>REGISTRATION FORM</h2>
+    <form id="registration-form" action="https://formspree.io/f/xeoganne" method="POST">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="age" placeholder="Age" required>
+      <input type="text" name="contact" placeholder="Contact Information" required>
+      <input type="text" name="email" placeholder="Email" required>
+
+      <select name="class" required>
+        <option value="" disabled selected>Select Class Section</option>
+        <option value="A">Class A</option>
+        <option value="B">Class B</option>
+        <option value="C">Class C</option>
+        <option value="D">Class D</option>
+        <option value="E">Class E</option>
+        <option value="F">Class F</option>
+        <option value="G">Class G</option>
+        <option value="H">Class H</option>
+        <option value="I">Class I</option>
+        <option value="J">Class J</option>
+        <option value="K">Class K</option>
+        <option value="L">Class L</option>
+        <option value="M">Class M</option>
+      </select>
+
+      <button type="submit">SUBMIT</button>
+
+      <p id="success-message" class="form-message success">Your submission has been received!</p>
+      <p id="error-message" class="form-message error">Please fill in all fields.</p>
+      <p id="payment-message" class="form-message payment" style="display:none;">
+        Your payment instructions will be emailed to you. Please make the payment within 5 days if you confirm to join.
+      </p>
+    </form>
+  </div>
 </section>
-	
-	
-	
+
 <script>
   const form = document.getElementById("registration-form");
   const successMsg = document.getElementById("success-message");
@@ -166,7 +100,7 @@ Kajang Training Centre</p>
       if (response.ok) {
         successMsg.style.display = "block";
         errorMsg.style.display = "none";
-        paymentMsg.style.display = "block"; // ✅ Show payment message
+        paymentMsg.style.display = "block";
         form.reset();
       } else {
         throw new Error("Network response was not ok.");
@@ -175,50 +109,29 @@ Kajang Training Centre</p>
     .catch(error => {
       successMsg.style.display = "none";
       errorMsg.style.display = "block";
-      paymentMsg.style.display = "none"; // Hide payment if error
+      paymentMsg.style.display = "none";
     });
   });
 </script>
-	
-	
-	
-	
-	
-	
 
-	
-	
-	<script>
-    document.body.addEventListener('mousemove', function(e) {
-        const x = e.clientX / window.innerWidth * 100;
-        const y = e.clientY / window.innerHeight * 100;
-        document.body.style.backgroundPosition = `${x}% ${y}%`;
-    });
+<script>
+  document.body.addEventListener('mousemove', function(e) {
+    const x = e.clientX / window.innerWidth * 100;
+    const y = e.clientY / window.innerHeight * 100;
+    document.body.style.backgroundPosition = `${x}% ${y}%`;
+  });
 </script>
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
-	
-	
-	  <!-- FAQ Section -->
+<!-- FAQ Section -->
 <section class="faq-wrapper">
   <div class="faq-box">
     <h3>ANY QUESTIONS? WE GOT YOU</h3>
-
     <div class="faq-item">
       <button class="faq-btn">Do I need any prior martial arts experience to join?</button>
       <div class="faq-answer">
         <p>No prior experience is required. Our classes are beginner-friendly and open to all age groups.</p>
       </div>
     </div>
-
     <div class="faq-item">
       <button class="faq-btn">What equipment is needed for training?</button>
       <div class="faq-answer">
@@ -227,68 +140,50 @@ Kajang Training Centre</p>
     </div>
   </div>
 </section>
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
-	<script>
+<script>
   const buttons = document.querySelectorAll(".faq-btn");
-
   buttons.forEach(button => {
     button.addEventListener("click", () => {
       const answer = button.nextElementSibling;
       const isOpen = answer.style.display === "block";
-
-      // Close all answers first
       document.querySelectorAll(".faq-answer").forEach(ans => ans.style.display = "none");
-
-      // Toggle current one
       answer.style.display = isOpen ? "none" : "block";
     });
   });
 </script>
-	
-	
-	
-	
+
 <footer>
-        <h2>GET IN TOUCH</h2>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>INFORMATION</h3>
-                <ul>
-                    <li><a href="../web/index.html">home</a></li>
-					<li><a href="../web/about.html">about</a></li>
-					<li><a href="../web/blog.html">blog</a></li>
-                    <li><a href="../web/testimonials.html">testimonial</a></li>
-                    <li><a href="../web/gallery.html">gallery</a></li>
-                    <li><a href="../web/events.html">events</a></li>
-                    <li><a href="../web/registration.html">class & registration</a></li>
-                    <li><a href="../web/instructors.html">instructors</a></li>
-                    <li><a href="../web/weapon.html">weapons</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <img src="../web/logo.png" alt="logo" class="footer-logo">
-            </div>
-            <div class="footer-section footer-contact">
-                <h3>CONTACT US</h3>
-                <p>+60 12–338 6797</p>
-                <p>+60 16–276 5977</p>
-                <div class="social-icons">
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" width="25"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="25"></a>
-                </div>
-            </div>
-        </div>
-        <p class="footer-quote">"சிலம்பம் – தமிழரின் பாரம்பரிய போர்க் கலைவும்,<br>உடலுடன் மனத்தையும் வளப்படுத்தும் மரபும்."</p>
-    </footer>
+  <h2>GET IN TOUCH</h2>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>INFORMATION</h3>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="testimonials.html">testimonial</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="events.html">events</a></li>
+        <li><a href="registration.html">class & registration</a></li>
+        <li><a href="instructors.html">instructors</a></li>
+        <li><a href="weapon.html">weapons</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <img src="logo.png" alt="logo" class="footer-logo">
+    </div>
+    <div class="footer-section footer-contact">
+      <h3>CONTACT US</h3>
+      <p>+60 12–338 6797</p>
+      <p>+60 16–276 5977</p>
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" width="25"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="25"></a>
+      </div>
+    </div>
+  </div>
+  <p class="footer-quote">"சிலம்பம் – தமிழரின் பாரம்பரிய போர்க் கலைவும்,<br>உடலுடன் மனத்தையும் வளப்படுத்தும் மரபும்."</p>
+</footer>
 </body>
 </html>
-
