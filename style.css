@@ -762,7 +762,7 @@ nav a:focus {
   position: relative;
   text-align: center;
   padding: 120px 20px;
-  background-image: url('../web/testimonial.jpg'); /* replace with your image path */
+  background-image: url('../silambam-web/testimonial.jpg'); /* replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
