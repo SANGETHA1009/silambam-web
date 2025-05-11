@@ -132,9 +132,51 @@ document.addEventListener("DOMContentLoaded", function() {
 </section>
 
 <!-- Expand History -->
-<script>
-function toggleReadMore(button) {
-  const extraText = button.previousElementSibling.querySelector('.extra-text');
-  if (extraText.style.display === "non
+	<script>
+  function toggleReadMore(button) {
+    const extraText = button.previousElementSibling.querySelector('.extra-text');
+    if (extraText.style.display === "none") {
+      extraText.style.display = "inline";
+      button.textContent = "READ LESS";
+    } else {
+      extraText.style.display = "none";
+      button.textContent = "READ MORE";
+    }
+  }
+</script>
 
 
+<footer>
+    <h2>GET IN TOUCH</h2>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>INFORMATION</h3>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="testimonials.html">testimonial</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="events.html">events</a></li>
+                <li><a href="registration.html">class & registration</a></li>
+                <li><a href="instructors.html">instructors</a></li>
+                <li><a href="weapon.html">weapons</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <img src="logo.png" alt="logo" class="footer-logo">
+        </div>
+        <div class="footer-section footer-contact">
+            <h3>CONTACT US</h3>
+            <p>+60 12–338 6797</p>
+            <p>+60 16–276 5977</p>
+            <div class="social-icons">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" width="25"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="25"></a>
+            </div>
+        </div>
+    </div>
+    <p class="footer-quote">"சிலம்பம் – தமிழரின் பாரம்பரிய போர்க் கலைவும்,<br>உடலுடன் மனத்தையும் வளப்படுத்தும் மரபும்."</p>
+</footer>
+</body>
+</html>
